@@ -56,30 +56,26 @@
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>aps2jni</artifactId>
-	    	<systemPath>C:\Users\SJNKSADMIN\Desktop\AP-Converter(JNI)\APU734_JNI\jar\aps2jni.jar</systemPath>
 	    	<version>1.0</version>
-	    	<scope>system</scope>
+	    	<scope>runtime</scope>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncCp943C</artifactId>
-	    	<systemPath>C:\Users\SJNKSADMIN\Desktop\AP-Converter(JNI)\APU734_JNI\jar\ApEncCp943C.jar</systemPath>
 	    	<version>1.0</version>
-	    	<scope>system</scope>
+	    	<scope>runtime</scope>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncMS932</artifactId>
-	    	<systemPath>C:\Users\SJNKSADMIN\Desktop\AP-Converter(JNI)\APU734_JNI\jar\ApEncMS932.jar</systemPath>
 	    	<version>1.0</version>
-	    	<scope>system</scope>
+	    	<scope>runtime</scope>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncSJIS</artifactId>
-	    	<systemPath>C:\Users\SJNKSADMIN\Desktop\AP-Converter(JNI)\APU734_JNI\jar\ApEncSJIS.jar</systemPath>
 	    	<version>1.0</version>
-	    	<scope>system</scope>
+	    	<scope>runtime</scope>
 	    </dependency>
 	</dependencies>
 
@@ -106,5 +102,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
