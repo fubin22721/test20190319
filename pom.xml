@@ -13,6 +13,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>helloheroku</name>
 	<description>Demo project for Spring Boot</description>
+	
+	<repositories>
+    <!--other repositories if any-->
+    <repository>
+        <id>project.local</id>
+        <name>project</name>
+        <url>file:${project.basedir}/repo</url>
+    </repository>
+</repositories>
 
 	<properties>
 		<java.version>1.8</java.version>
