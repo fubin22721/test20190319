@@ -66,21 +66,29 @@
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>aps2jni</artifactId>
 	    	<version>1.0</version>
+	    	<scope>system</scope>
+	    	<systemPath>${project.basedir}/lib/aps2jni-1.0.jar</systemPath>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncCp943C</artifactId>
 	    	<version>1.0</version>
+	    	<scope>system</scope>
+	    	<systemPath>${project.basedir}/lib/ApEncCp943C-1.0.jar</systemPath>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncMS932</artifactId>
 	    	<version>1.0</version>
+	        <scope>system</scope>
+	    	<systemPath>${project.basedir}/lib/ApEncMS932-1.0.jar</systemPath>
 	    </dependency>
 	    <dependency>
 	    	<groupId>jp.co.agrex</groupId>
 	    	<artifactId>ApEncSJIS</artifactId>
 	    	<version>1.0</version>
+	        <scope>system</scope>
+	    	<systemPath>${project.basedir}/lib/ApEncSJIS-1.0.jar</systemPath>	    	
 	    </dependency>
 	</dependencies>
 
