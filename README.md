@@ -1,3 +1,0 @@
-# helloheroku
-# helloheroku
-# helloheroku
