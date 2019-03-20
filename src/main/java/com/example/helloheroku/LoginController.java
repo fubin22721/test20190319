@@ -43,8 +43,7 @@ public class LoginController {
 				
 				model.addAttribute("adress_code", _latest.getCode());
 				
-		 	}
-		 	
+		 	}		 	
 
 		} catch( Aps2Exception e ){
 			e.printStackTrace();
