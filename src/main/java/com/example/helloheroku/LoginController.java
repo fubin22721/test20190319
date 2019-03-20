@@ -52,6 +52,7 @@ public class LoginController {
 		}
 	 
 	 model.addAttribute("adress_code");//do　not delete
+	 System.out.println("adress_code");
 	 	return "top";
  }
 }
