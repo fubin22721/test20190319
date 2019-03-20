@@ -41,7 +41,7 @@ public class LoginController {
 		 		
 				Aps2MasterData _latest = _stdresult.getMasterData();
 				
-				model.addAttribute("adress_code", _latest.getCode());
+				model.addAttribute(" + _stdresult.getCode() + ", _latest.getCode());
 				
 		 	}		 	
 
@@ -51,7 +51,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-	 model.addAttribute("adress_code");//do　not delete
+	 model.addAttribute(" + _stdresult.getCode() + ");//do　not delete
 	 	return "top";
  }
 }
