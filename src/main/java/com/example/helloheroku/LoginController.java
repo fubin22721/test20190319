@@ -18,7 +18,7 @@ public class LoginController {
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-	 	String iniPath = "./ini/aps2env.ini";
+	 	String iniPath = "../ini/aps2env.ini";
 	 	
 	 	String target = "東京都立川市";
 	 	
@@ -29,9 +29,9 @@ public class LoginController {
 //		 	
 		 	Aps2Coder _cd = new Aps2Coder();
 //	 		
-//	 		Aps2Controller cont = new Aps2Controller();
+	 		Aps2Controller cont = new Aps2Controller();
 //	 		
-//	 		cont.prologue( iniPath );
+	 		cont.prologue( iniPath );
 //		 	
 //		 	Aps2StdCoderResult _stdresult = _cd.standardCoder(_cd.FUNC_MODE_ADDRESS,
 //					  _cd.FUNC_OPTION_NEW_MASTER, target, "", "");
@@ -45,8 +45,8 @@ public class LoginController {
 //				
 //		 	}		 	
 //
-//		} catch( Aps2Exception e ){
-//			e.printStackTrace();
+		} catch( Aps2Exception e ){
+			e.printStackTrace();
 		} catch( Aps2RuntimeException re ){
 			re.printStackTrace();
 		}
