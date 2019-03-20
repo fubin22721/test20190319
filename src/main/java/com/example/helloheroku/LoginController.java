@@ -23,35 +23,35 @@ public class LoginController {
 	 	String target = "東京都立川市";
 	 	
 	 	try {
-//	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
-//	 		System.out.println( "  JAVA.VENDOR  :[" + System.getProperty( "java.vendor" ) + "]" );
-//	 		System.out.println( "  JAVA.HOME    :[" + System.getProperty( "java.home" ) + "]" );
-//		 	
+	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
+	 		System.out.println( "  JAVA.VENDOR  :[" + System.getProperty( "java.vendor" ) + "]" );
+	 		System.out.println( "  JAVA.HOME    :[" + System.getProperty( "java.home" ) + "]" );
+		 	
 		 	Aps2Coder _cd = new Aps2Coder();
-//	 		
+	 		
 	 		Aps2Controller cont = new Aps2Controller();
-//	 		
+	 		
 	 		cont.prologue( iniPath );
-//		 	
-//		 	Aps2StdCoderResult _stdresult = _cd.standardCoder(_cd.FUNC_MODE_ADDRESS,
-//					  _cd.FUNC_OPTION_NEW_MASTER, target, "", "");
-//		 	
-//		 	if(_stdresult.getNewMasterNo() != 0 &&
-//					_stdresult.getNewCodeFlag() == _stdresult.NEW_CODE_FLAG_GENZON) {
-//		 		
-//				Aps2MasterData _latest = _stdresult.getMasterData();
-//				
-//				model.addAttribute("adress_code", _latest.getCode());
-//				
-//		 	}		 	
-//
+		 	
+		 	Aps2StdCoderResult _stdresult = _cd.standardCoder(_cd.FUNC_MODE_ADDRESS,
+					  _cd.FUNC_OPTION_NEW_MASTER, target, "", "");
+		 	
+		 	if(_stdresult.getNewMasterNo() != 0 &&
+					_stdresult.getNewCodeFlag() == _stdresult.NEW_CODE_FLAG_GENZON) {
+		 		
+				Aps2MasterData _latest = _stdresult.getMasterData();
+				
+				model.addAttribute("adress_code", _latest.getCode());
+				
+		 	}		 	
+
 		} catch( Aps2Exception e ){
 			e.printStackTrace();
 		} catch( Aps2RuntimeException re ){
 			re.printStackTrace();
 		}
 	 
-//	 model.addAttribute("adress_code", "123-4567");//do　not delete
+	 model.addAttribute("adress_code", "123-4567");//do　not delete
 	 	return "top";
  }
 }
