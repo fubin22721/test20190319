@@ -51,7 +51,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-//	 model.addAttribute("adress_code", "123-4567");//do　not delete
+	 model.addAttribute("adress_code");//do　not delete
 	 	return "top";
  }
 }
