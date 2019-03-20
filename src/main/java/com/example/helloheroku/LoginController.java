@@ -18,16 +18,16 @@ public class LoginController {
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-//	 	String iniPath = "./ini/aps2env.ini";
-//	 	
-//	 	String target = "東京都立川市";
-//	 	
-//	 	try {
+	 	String iniPath = "./ini/aps2env.ini";
+	 	
+	 	String target = "東京都立川市";
+	 	
+	 	try {
 //	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
 //	 		System.out.println( "  JAVA.VENDOR  :[" + System.getProperty( "java.vendor" ) + "]" );
 //	 		System.out.println( "  JAVA.HOME    :[" + System.getProperty( "java.home" ) + "]" );
 //		 	
-//		 	Aps2Coder _cd = new Aps2Coder();
+		 	Aps2Coder _cd = new Aps2Coder();
 //	 		
 //	 		Aps2Controller cont = new Aps2Controller();
 //	 		
@@ -47,10 +47,10 @@ public class LoginController {
 //
 //		} catch( Aps2Exception e ){
 //			e.printStackTrace();
-//		} catch( Aps2RuntimeException re ){
-//			re.printStackTrace();
-//		}
-//	 
+		} catch( Aps2RuntimeException re ){
+			re.printStackTrace();
+		}
+	 
 //	 model.addAttribute("adress_code", "123-4567");//do　not delete
 	 	return "top";
  }
