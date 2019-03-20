@@ -20,7 +20,7 @@ public class LoginController {
 	 
 	 	String iniPath = "../ini/aps2env.ini";
 	 	
-	 	String target = "東京都立川市";
+	 	String target = "東京都渋谷区初台１－４７－１";
 	 	
 	 	try {
 	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
@@ -52,7 +52,6 @@ public class LoginController {
 		}
 	 
 	 model.addAttribute("adress_code");//do　not delete
-	 System.out.println("adress_code");
 	 	return "top";
  }
 }
