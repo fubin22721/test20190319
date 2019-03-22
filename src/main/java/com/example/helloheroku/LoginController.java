@@ -18,7 +18,7 @@ public class LoginController {
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-	 	String iniPath = "../ini/aps2env.ini";
+	 	String iniPath = "../aps2env.ini";
 	 	
 	 	String target = "東京都渋谷区初台1－47－１";
 	 	
