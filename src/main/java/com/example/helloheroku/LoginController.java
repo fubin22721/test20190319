@@ -26,8 +26,8 @@ public class LoginController {
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-//	 	String iniPath = "./aps2env.ini";
-	 	String iniPath = "";
+//	 	String iniPath = ".aps2env.ini";
+	 	String iniPath = "../resources/ini/aps2env.ini";
 	 	
 
 	 	
