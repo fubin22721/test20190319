@@ -18,7 +18,7 @@ public class LoginController {
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-	 	String iniPath = "...../aps2env.ini";
+	 	String iniPath = "./src/jp/co/agrex/aps2env.ini";
 	 	
 	 	String target = "東京都渋谷区初台1－47－１";
 	 	
@@ -51,7 +51,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-//	 model.addAttribute("address_code");//do　not delete
+	 model.addAttribute("address_code","address_code=21344565");//do　not delete
 	 	return "top";
  }
 }
