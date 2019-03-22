@@ -31,8 +31,8 @@ public class LoginController {
 	 	
 
 	 	
-	 	WebApplicationContext wac = WebApplicationContextUtils.getRequiredWebApplicationContext(session.getServletContext());
-	 	System.out.println(session.getServletContext().getContextPath());
+//	 	WebApplicationContext wac = WebApplicationContextUtils.getRequiredWebApplicationContext(session.getServletContext());
+	 	System.out.println("ContextPath:"+session.getServletContext().getContextPath()+"");
 	 	
 	 	String target = "東京都渋谷区初台1－47－１";
 	 	
