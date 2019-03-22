@@ -1,9 +1,14 @@
 package com.example.helloheroku;
 
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import jp.co.agrex.aps2jni.Aps2Coder;
 import jp.co.agrex.aps2jni.Aps2Controller;
@@ -15,10 +20,19 @@ import jp.co.agrex.aps2jni.Aps2StdCoderResult;
 
 @Controller
 public class LoginController {
+ 	@Autowired
+ 	HttpSession session;
+	
  @RequestMapping(value = "/login", method = RequestMethod.POST)
  public String login(Model model) {
 	 
-	 	String iniPath = "./aps2env.ini";
+//	 	String iniPath = "./aps2env.ini";
+	 	String iniPath = "";
+	 	
+
+	 	
+	 	WebApplicationContext wac = WebApplicationContextUtils.getRequiredWebApplicationContext(session.getServletContext());
+	 	System.out.println(session.getServletContext().getContextPath());
 	 	
 	 	String target = "東京都渋谷区初台1－47－１";
 	 	
@@ -51,7 +65,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-	 model.addAttribute("address_code","address_code=21344565");//do　not delete
+//	 model.addAttribute("address_code","address_code=21344565");//do　not delete
 	 	return "top";
  }
 }
