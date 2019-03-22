@@ -27,7 +27,7 @@ public class LoginController {
  public String login(Model model) {
 	 
 //	 	String iniPath = ".aps2env.ini";
-	 	String iniPath = "../resources/ini/aps2env.ini";
+	 	String iniPath = "../ini/aps2env.ini";
 	 	
 
 	 	
