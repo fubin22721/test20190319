@@ -20,7 +20,7 @@ public class LoginController {
 	 
 	 	String iniPath = "../ini/aps2env.ini";
 	 	
-	 	String target = "東京都渋谷区初台１－４７－１";
+	 	String target = "東京都渋谷区初台1－47－１";
 	 	
 	 	try {
 	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
@@ -41,7 +41,7 @@ public class LoginController {
 		 		
 				Aps2MasterData _latest = _stdresult.getMasterData();
 				
-				model.addAttribute(" + _stdresult.getCode() + ", _latest.getCode());
+				model.addAttribute("address_code", _latest.getCode());
 				
 		 	}		 	
 
@@ -51,7 +51,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-	 model.addAttribute(" + _stdresult.getCode() + ");//do　not delete
+//	 model.addAttribute("address_code");//do　not delete
 	 	return "top";
  }
 }
