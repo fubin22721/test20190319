@@ -27,14 +27,14 @@ public class LoginController {
  public String login(Model model) {
 	 
 //	 	String iniPath = ".aps2env.ini";
-	 	String iniPath = "../ini/aps2env.ini";
+	 	String iniPath = "ini/aps2env.ini";
 	 	
 
 	 	
 //	 	WebApplicationContext wac = WebApplicationContextUtils.getRequiredWebApplicationContext(session.getServletContext());
 	 	System.out.println("ContextPath:"+session.getServletContext().getContextPath()+"");
 	 	
-	 	String target = "東京都渋谷区初台1－47－１";
+	 	String target = "譚ｱ莠ｬ驛ｽ貂玖ｰｷ蛹ｺ蛻晏床1�ｼ�47�ｼ搾ｼ�";
 	 	
 	 	try {
 	 		System.out.println( "  JAVA.VERSION :[" + System.getProperty( "java.version" ) + "]" );
@@ -65,7 +65,7 @@ public class LoginController {
 			re.printStackTrace();
 		}
 	 
-//	 model.addAttribute("address_code","address_code=21344565");//do　not delete
+//	 model.addAttribute("address_code","address_code=21344565");//do縲�not delete
 	 	return "top";
  }
 }
